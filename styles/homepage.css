@@ -6,117 +6,66 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
     background-color: #333;
-    color: white;
-    padding: 15px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
+.logo img {
     margin: 10px;
 }
 
-.h1 {
-    margin: 15px;
-    font-size: 24px;
-    color: white;
-}
-
-.header-right {
-    margin-left: auto;
-}
-
-.header-right a {
-    cursor: pointer;
-    margin-right: 50px;
-    font-size: 20px;
-    color: white;
-    
-    border-radius: 2px;
-    border: 2px;
-    text-decoration: none;
-}
-
-.header-right a:hover {
-    background-color: #2980b9;
-}
-
-/********************************************/
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    font-family: Arial;
-}
-
-
-.navbar a {
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-.dropdown {
-    float: inherit;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
+nav ul {
+    list-style: none;
     margin: 0;
-    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
-
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: white;
-    color: black;
+nav ul li {
+    position: relative;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
 
-.dropdown-content {
+nav a:hover {
+    background-color: #555;
+}
+
+nav ul ul {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border: 1px solid #555;
 }
 
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+nav ul li:hover>ul {
+    display: flex;
+    flex-direction: column;
 }
 
-
-.dropdown-content a:hover {
-    background-color: #ddd;
+nav ul ul li {
+    width: 100%;
 }
 
-
-.dropdown:hover .dropdown-content {
+nav ul ul a {
+    padding: 10px 20px;
     display: block;
 }
 
-/******************************************************/
+nav ul ul a:hover {
+    background-color: #555;
+}
 
 .recipe-container {
     max-width: 50%;
@@ -197,42 +146,3 @@ header {
 }
 
 /**********************************/
-
-
-/* ANASAYFA SLIDER DÜZENLEME */
-.carousel {
-    width: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-btn {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #fff;
-    background-color: #333;
-    border: none;
-    padding: 10px;
-    z-index: 1;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
