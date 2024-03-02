@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-    margin: 10px;
+    margin-left: 30px;
 }
 
 nav ul {
@@ -34,6 +34,7 @@ nav a {
     color: white;
     padding: 10px 20px;
     display: block;
+    margin-right: 30px;
 }
 
 nav a:hover {
@@ -67,27 +68,45 @@ nav ul ul a:hover {
     background-color: #555;
 }
 
-.recipe-container {
-    max-width: 50%;
-    margin: 2em auto;
-    padding: 1em;
-    color: white;
+
+
+/*************** slider????*************/
+
+
+
+/************* Tarif kartları *********************/
+
+h1 {
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 80px;
 }
 
-.recipe {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
     text-align: center;
-    background-color: #333;
-    margin-bottom: 1em;
-    padding: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-.recipe-img {
-    display: inline-block;
-    vertical-align: middle;
+h2 {
+    color: #333;
 }
 
+p {
+    color: #666;
+}
+
+/**********************************/
 
 /* FOOTER  */
 .footer-container {
@@ -137,12 +156,3 @@ nav ul ul a:hover {
     text-decoration: none;
 }
 
-
-/**********************************/
-
-.eklenecek {
-    margin: 300px;
-    text-align: center;
-}
-
-/**********************************/

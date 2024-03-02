@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-    margin: 10px;
+    margin-left: 30px;
 }
 
 nav ul {
@@ -34,6 +34,7 @@ nav a {
     color: white;
     padding: 10px 20px;
     display: block;
+    margin-right: 30px;
 }
 
 nav a:hover {
