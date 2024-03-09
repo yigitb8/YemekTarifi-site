@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tarif Ekle</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-GLhlTQ8i6NDUUlFHAkLJv5WciKDVR+H9I83PLsG5U8fB83Rel4uRH8meM1CBIaVk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/YemekTarifi-site/styles/homepage.css">
+    <link rel="stylesheet" href="/YemekTarifi-site/styles/anayemeksayfa.css">
+    <link rel="stylesheet" href="/YemekTarifi-site/styles/tarif_ekle_form.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <div class="logo">
+                <img src="/YemekTarifi-site/assets/mutfak sırları.png" alt="logo" width="160" height="160">
+            </div>
+            <div class="h1">
+                <h1> Mutfak Sırları </h1>
+            </div>
+            <div class="header-right">
+                <a href="index.html"> Ana Sayfa </a>
+                <div class="dropdown">
+                    <button class="dropbtn"> Tarifler
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="anayemeksayfa.html">Ana Yemekler</a>
+                        <a href="#">Aperatifler</a>
+                        <a href="#">İçecekler</a>
+                        <a href="#">Tatlılar</a>
+                    </div>
+
+                    <a href="tarif_ekle_sayfa.html"> Tarif Ekle </a>
+                    <a href="login.html" class="login-btn"> Giriş Yap </a>
+                    <a href="register.html" class="register-btn"> Kayıt Ol </a>
+                </div>
+        </header>
+    </div>
+
+
+    <div class="food_title">
+        <h3>YENİ BİR TARİF PAYLAŞ !</h3>
+    </div>
+
+    <div class="main_container_tarif">
+        <section class="recipe_container">
+            <form action="tarif_ekle_onay.html" enctype=multipart/form-data” method="post">
+
+                <div class="tarif_box">
+                    <h4>TARİF KATEGORİSİNİ SEÇİN</h4>
+                    <label for="recipe_category">Tarif Kategorisi</label>
+                    <select id="recipe_category" name="recipe_category">
+                        <option value="seciniz">Seçiniz</option>
+                        <option value="ana_yemek">Ana Yemek</option>
+                        <option value="tatli">Tatlı</option>
+                        <option value="icecek">İçecek</option>
+                        <option value="aperatif">Aperatif</option>
+                    </select>
+
+                    <label for="recipe_type">Yemek Çeşidi</label>
+                    <select id="recipe_type" name="recipe_type">
+                        <option value="seciniz">Seçiniz</option>
+                        <option value="etli_yemek">Et Yemeği</option>
+                        <option value="tavuklu_yemek">Tavuk Yemeği</option>
+                        <option value="balikli_yemek">Balık Yemeği</option>
+                        <option value="sebzeli_yemek">Sebzeli Yemek</option>
+                        <option value="sutlu_tatli">Sütlü Tatlı</option>
+                        <option value="cikolatalı_tatli">Çikolatalı Tatlı</option>
+                        <option value="meyveli_tatli">Meyveli Tatlı</option>
+                        <option value="sicak_icecek">Sıcak İçecek</option>
+                        <option value="soguk_icecek">Soğuk İçecek</option>
+                        <option value="aperatif">Aperatifler</option>
+                    </select>
+
+                    <h4>TARİF İSMİ</h4>
+                    <textarea name="ingredients" placeholder="Yemek tarifinin ismini maksimum 100 harf olacak şekilde yazınız"
+                        maxlength="100"></textarea>
+                </div>
+
+                <div class="tarif_box ingredient_box">
+                    <h4>MALZEMELER</h4>
+                    <textarea name="ingredients" placeholder="Malzemelerinizi liste halinde yazınız"
+                        maxlength="100"></textarea>
+                </div>
+
+                <div class="tarif_box preparation_box">
+                    <h4>TARİFİN HAZIRLIK AŞAMALARI</h4>
+
+                    <h5>1. Adım</h5>
+                    <textarea name="preperation" rows="2" cols="50" placeholder="Hazırlık aşamalarını sırasıyla yazınız"
+                        maxlength="500"></textarea>
+
+                    <h4>TARİFİN HAZIRLIK AŞAMALARI</h4>
+                    <h5>2. Adım</h5>
+                    <textarea name="preperation" rows="2" cols="50" placeholder="Hazırlık aşamalarını sırasıyla yazınız"
+                        maxlength="500"></textarea>
+
+                    <h4>TARİFİN HAZIRLIK AŞAMALARI</h4>
+                    <h5>3. Adım</h5>
+                    <textarea name="preperation" rows="2" cols="50" placeholder="Hazırlık aşamalarını sırasıyla yazınız"
+                        maxlength="500"></textarea>
+                </div>
+
+                <div class="tarif_box">
+                    
+                    <span>KAÇ KİŞİLİK?</span>
+                    <label for="recipe_category"></label>
+                    <select id="recipe_category" name="recipe_category">
+                        <option value="2_kisilik">1-2 Kişilik</option>
+                        <option value="4_kisilik">2-4 Kişilik</option>
+                        <option value="6_kisilik">4-6 Kişilik</option>
+                        <option value="8_kisilik">6-8 Kişilik</option>
+                        <option value="12_kisilik">10-12 Kişilik</option>
+                    </select>
+
+                    <span>HAZIRLAMA SÜRESİ</span>
+                    <label for="recipe_category"></label>
+                    <select id="recipe_category" name="recipe_category">
+                        <option value="15 Dakika">15 Dakika</option>
+                        <option value="25 Dakika">25 Dakika</option>
+                        <option value="30 Dakika">30 Dakika</option>
+                        <option value="35 Dakika">35 Dakika</option>
+                        <option value="40 Dakika">40 Dakika</option>
+                        <option value="45 Dakika">45 Dakika</option>
+                        <option value="50 Dakika">50 Dakika</option>
+                        <option value="55 Dakika">55 Dakika</option>
+                        <option value="60 Dakika">60 Dakika</option>
+                    </select>
+                    
+                    <span>PİŞİRME SÜRESİ</span>
+                    <label for="recipe_category"></label>
+                    <select id="recipe_category" name="recipe_category">
+                        <option value="15 Dakika">15 Dakika</option>
+                        <option value="25 Dakika">25 Dakika</option>
+                        <option value="30 Dakika">30 Dakika</option>
+                        <option value="35 Dakika">35 Dakika</option>
+                        <option value="40 Dakika">40 Dakika</option>
+                        <option value="45 Dakika">45 Dakika</option>
+                        <option value="50 Dakika">50 Dakika</option>
+                        <option value="55 Dakika">55 Dakika</option>
+                        <option value="60 Dakika">60 Dakika</option>
+                    </select>
+    
+                </div>
+
+
+                <div class="tarif_box add_photo">
+
+                    <h4>TARİFİN FOTOĞRAFLARINI EKLE</h4>
+
+                    <label for="image-upload1">
+                    <input type="file" id="image-upload1" name="image_recipe1" accept="image/*">
+                    </label>
+                    <button id="custom-browse-button">1.Fotoğraf</button> 
+                    
+                    <label for="image-upload2">
+                    <input type="file" id="image-upload2" name="image_recipe2" accept="image/*">
+                    </label>
+                    <button id="custom-browse-button">2.Fotoğraf</button> 
+                    
+                    <label for="image-upload3">
+                    <input type="file" id="image-upload3" name="image_recipe3" accept="image/*">
+                    </label>
+                    <button id="custom-browse-button">3.Fotoğraf</button> 
+                    
+                    <label for="image-upload4">
+                    <input type="file" id="image-upload4" name="image_recipe4" accept="image/*">
+                    </label>
+                    <button id="custom-browse-button">4.Fotoğraf</button> 
+
+                </div>
+
+                <div class="tarif_save">
+                    <button type="submit"><a href="tarif_ekle_onay.html">KAYDET </a></button>
+                    <button type="reset">TEMİZLE</button>
+                </div>
+
+            </form>
+        </section>
+
+        <aside class="advertisement_container1">
+            ADVERTISEMENT
+        </aside>
+
+        <aside class="advertisement_container2">
+            <H4>POPÜLER TARİFLER</H4>
+
+            <div class="recipe_card">
+                <a href=""><img src="/YemekTarifi-site/assets/Resim_300_200.jpg" alt="Yemek Tarifinin Fotoğrafı"></a>
+                <a href="#">YEMEK TARİFİ BAŞLIĞI</a>
+                <span> 4 Kişilik, 15 dk Hazırlık, 20 dk Pişirme</span>
+                <div>
+                    <span>Beğen</span>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <span> Yorumlar </span>
+                    <a href=""><i class="fa-solid fa-comment"></i></a>
+    
+                </div>
+            </div>
+
+            <div class="recipe_card">
+                <a href=""><img src="/YemekTarifi-site/assets/Resim_300_200.jpg" alt="Yemek Tarifinin Fotoğrafı"></a>
+                <a href="#">YEMEK TARİFİ BAŞLIĞI</a>
+                <span> 4 Kişilik, 15 dk Hazırlık, 20 dk Pişirme</span>
+                <div>
+                    <span>Beğen</span>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <span> Yorumlar </span>
+                    <a href=""><i class="fa-solid fa-comment"></i></a>
+    
+                </div>
+            </div>
+
+            <div class="recipe_card">
+                <a href=""><img src="/YemekTarifi-site/assets/Resim_300_200.jpg" alt="Yemek Tarifinin Fotoğrafı"></a>
+                <a href="#">YEMEK TARİFİ BAŞLIĞI</a>
+                <span> 4 Kişilik, 15 dk Hazırlık, 20 dk Pişirme</span>
+                <div>
+                    <span>Beğen</span>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <span> Yorumlar </span>
+                    <a href=""><i class="fa-solid fa-comment"></i></a>
+    
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Üye Ol</a></li>
+                    <li><a href="#">Giriş Yap</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Tarifler</h4>
+                <ul>
+                    <li><a href="anayemeksayfa.html">Ana Yemekler</a></li>
+                    <li><a href="#">Aperatifler</a></li>
+                    <li><a href="#">İçecekler</a></li>
+                    <li><a href="#">Tatlılar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <div class="social-media">
+                    <h4>Sosyal Medya Hesaplarımız</h4>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-solid fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 mutfak-sirlari.com . Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://kit.fontawesome.com/cb74b24306.js" crossorigin="anonymous"></script>
+
+</html>
