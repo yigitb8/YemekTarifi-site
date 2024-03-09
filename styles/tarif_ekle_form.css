@@ -1,0 +1,122 @@
+.main_container_tarif {
+    display: flex;
+    flex-direction: column;
+    margin: 0%  0%  3%  0%;
+    padding: 0%  0%  0%  0%;
+    line-height: 1.7em;
+}
+
+.recipe_container {
+    display: flex;
+    flex-direction: row;
+    margin: 0%  10%  0% 15%;
+    padding: 0%  5%  3%  3%;
+}
+
+.advertisement_container1{
+    display: block;
+    position: absolute;
+    margin: 0%  10%  50%  65%;
+    padding: 0% 5% 0% 5%;
+    height: 600px;
+    width: 200px;
+    border: 5px solid black;
+}
+
+.advertisement_container2{
+    display: block;
+    position: absolute;
+    margin: 38%  10%  10%  65%;
+    padding: 0% 0% 0% 0%;
+    width: 400px;
+}
+
+.tarif_box {
+    resize: none;
+    height: 300px;
+    width: 600px;
+    margin: 0%  0%  3% 0%;
+    padding: 5%  0%  0%  7%;
+    background-color: rgb(222, 216, 216);
+}
+
+.tarif_box > textarea {
+    display: block;
+    align-content: center;
+    resize: none;
+    height: 50px;
+    width: 550px;  
+}
+
+.tarif_box > span {
+    display: flex;
+    margin: 1%  0%  1%  0%;
+    font-weight: bold;
+}
+
+.tarif_box > label {
+    display: inline-block;
+    padding: 0%  0%  0%  3%;
+}
+
+.tarif_box > select {
+    margin: 0%  0%  0%  0%;
+    height: 50px;
+    width: 120px;
+    background-color: white;
+}
+
+.ingredient_box > textarea{
+    height: 160px;
+}
+
+.preparation_box{
+    height: 800px;
+}
+
+.preparation_box > textarea {
+    height: 120px;
+}
+
+.add_photo{
+    margin: 3% 0% 2% 0%;
+    height: 350px;
+}
+
+.add_photo label{
+    opacity: 0; 
+    position: absolute; 
+    z-index: -1;
+}
+
+#custom-browse-button {
+    margin: 0% 0% 2% 7%;
+    height: 100px;
+    width: 200px;
+    background-color: #545252; 
+    color: white;
+    border: none;
+    cursor: pointer; 
+}
+
+.tarif_save{
+    height: 70px;
+    width: 570px;
+    margin: 3%  0%  3% 0%;
+    padding: 5%  0%  1%  12%;
+    background-color: rgb(222, 216, 216);
+}
+
+.tarif_save > button {
+    margin: 1% 0% 1% 3%;
+    height: 40px;
+    width: 200px;
+    background-color: red;
+    color: white;
+}
+
+.tarif_save > a {
+    text-decoration: none;
+}
+
+
