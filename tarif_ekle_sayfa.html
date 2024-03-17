@@ -15,38 +15,36 @@
 </head>
 
 <body>
-    <div class="header">
-        <header>
-            <div class="logo">
-                <img src="./assets/logo_mutfaksirlari.png" alt="Logo" width="100" height="100">
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html"> Ana Sayfa </a>
-                    </li>
-                    <li>
-                        <a href="./tarifler_ana_sayfa.html"> Tarifler </a>
-                        <ul>
-                            <li><a href="./anayemeksayfa.html"> Ana Yemekler </a></li>
-                            <li><a href="#"> Aperatifler </a></li>
-                            <li><a href="#"> Tatlılar </a></li>
-                            <li><a href="#"> İçecekler </a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./tarif_ekle_sayfa.html"> Tarif Ekle </a>
-                    </li>
-                    <li>
-                        <a href="./register.html"> Üye Ol</a>
-                    </li>
-                    <li>
-                        <a href="./login.html"> Giriş Yap </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo_mutfaksirlari.png" alt="Logo" width="100" height="100">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html"> Ana Sayfa </a>
+                </li>
+                <li>
+                    <a href="./tarifler_ana_sayfa.html"> Tarifler </a>
+                    <ul>
+                        <li><a href="./anayemeksayfa.html"> Ana Yemekler </a></li>
+                        <li><a href="./aperatifler.html"> Aperatifler </a></li>
+                        <li><a href="./tatlilar.html"> Tatlılar </a></li>
+                        <li><a href="./icecekler.html"> İçecekler </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./tarif_ekle_sayfa.html"> Tarif Ekle </a>
+                </li>
+                <li>
+                    <a href="./register.html"> Üye Ol</a>
+                </li>
+                <li>
+                    <a href="./login.html"> Giriş Yap </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 
     <div class="food_title">
@@ -74,7 +72,6 @@
                         <option value="etli_yemek">Et Yemeği</option>
                         <option value="tavuklu_yemek">Tavuk Yemeği</option>
                         <option value="balikli_yemek">Balık Yemeği</option>
-                        <option value="sebzeli_yemek">Sebzeli Yemek</option>
                         <option value="sutlu_tatli">Sütlü Tatlı</option>
                         <option value="cikolatalı_tatli">Çikolatalı Tatlı</option>
                         <option value="meyveli_tatli">Meyveli Tatlı</option>
@@ -84,7 +81,8 @@
                     </select>
 
                     <h4>TARİF İSMİ</h4>
-                    <textarea name="ingredients" placeholder="Yemek tarifinin ismini maksimum 100 harf olacak şekilde yazınız"
+                    <textarea name="ingredients"
+                        placeholder="Yemek tarifinin ismini maksimum 100 harf olacak şekilde yazınız"
                         maxlength="100"></textarea>
                 </div>
 
@@ -113,7 +111,7 @@
                 </div>
 
                 <div class="tarif_box">
-                    
+
                     <span>KAÇ KİŞİLİK?</span>
                     <label for="recipe_category"></label>
                     <select id="recipe_category" name="recipe_category">
@@ -137,7 +135,7 @@
                         <option value="55 Dakika">55 Dakika</option>
                         <option value="60 Dakika">60 Dakika</option>
                     </select>
-                    
+
                     <span>PİŞİRME SÜRESİ</span>
                     <label for="recipe_category"></label>
                     <select id="recipe_category" name="recipe_category">
@@ -151,7 +149,7 @@
                         <option value="55 Dakika">55 Dakika</option>
                         <option value="60 Dakika">60 Dakika</option>
                     </select>
-    
+
                 </div>
 
 
@@ -159,27 +157,26 @@
 
                     <h4>TARİFİN FOTOĞRAFLARINI EKLE</h4>
 
-
+                    <button id="custom-browse-button">1.Fotoğraf</button>
                     <label for="image-upload1">
-                    <button id="custom-browse-button">1.Fotoğraf</button> 
-                    <input type="file" id="image-upload1" name="image_recipe1" accept="image/*">
+                        <input type="file" id="image-upload1" name="image_recipe1" accept="image/*">
                     </label>
 
-                    <button id="custom-browse-button">2.Fotoğraf</button> 
+                    <button id="custom-browse-button">2.Fotoğraf</button>
                     <label for="image-upload2">
-                    <input type="file" id="image-upload2" name="image_recipe2" accept="image/*">
+                        <input type="file" id="image-upload2" name="image_recipe2" accept="image/*">
                     </label>
-                    
-                    <button id="custom-browse-button">3.Fotoğraf</button> 
+
+                    <button id="custom-browse-button">3.Fotoğraf</button>
                     <label for="image-upload3">
-                    <input type="file" id="image-upload3" name="image_recipe3" accept="image/*">
+                        <input type="file" id="image-upload3" name="image_recipe3" accept="image/*">
                     </label>
-                    
-                    <button id="custom-browse-button">4.Fotoğraf</button> 
+
+                    <button id="custom-browse-button">4.Fotoğraf</button>
                     <label for="image-upload4">
-                    <input type="file" id="image-upload4" name="image_recipe4" accept="image/*">
+                        <input type="file" id="image-upload4" name="image_recipe4" accept="image/*">
                     </label>
- 
+
                 </div>
 
                 <div class="tarif_save">
@@ -206,7 +203,7 @@
                     <a href=""><i class="fa-solid fa-heart"></i></a>
                     <span> Yorumlar </span>
                     <a href=""><i class="fa-solid fa-comment"></i></a>
-    
+
                 </div>
             </div>
 
@@ -219,7 +216,7 @@
                     <a href=""><i class="fa-solid fa-heart"></i></a>
                     <span> Yorumlar </span>
                     <a href=""><i class="fa-solid fa-comment"></i></a>
-    
+
                 </div>
             </div>
 
@@ -232,16 +229,13 @@
                     <a href=""><i class="fa-solid fa-heart"></i></a>
                     <span> Yorumlar </span>
                     <a href=""><i class="fa-solid fa-comment"></i></a>
-    
+
                 </div>
             </div>
 
         </aside>
 
     </div>
-
-
-
 
     <footer>
         <div class="footer-container">
@@ -259,9 +253,9 @@
                 <h4>Tarifler</h4>
                 <ul>
                     <li><a href="./anayemeksayfa.html">Ana Yemekler</a></li>
-                    <li><a href="#">Aperatifler</a></li>
-                    <li><a href="#">İçecekler</a></li>
-                    <li><a href="#">Tatlılar</a></li>
+                    <li><a href="./aperatifler.html">Aperatifler</a></li>
+                    <li><a href="./icecekler.html">İçecekler</a></li>
+                    <li><a href="./tatlilar.html">Tatlılar</a></li>
                 </ul>
             </div>
 

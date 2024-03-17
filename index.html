@@ -8,6 +8,7 @@
     <title> Mutfak Sırları | Lezzetli Yemek Tarifleri </title>
 
     <link rel="stylesheet" href="./styles/homepage.css">
+    <link rel="stylesheet" href="./styles/anayemeksayfa.css">
 </head>
 
 <body>
@@ -24,9 +25,9 @@
                     <a href="./tarifler_ana_sayfa.html"> Tarifler </a>
                     <ul>
                         <li><a href="./anayemeksayfa.html"> Ana Yemekler </a></li>
-                        <li><a href="#"> Aperatifler </a></li>
-                        <li><a href="#"> Tatlılar </a></li>
-                        <li><a href="#"> İçecekler </a></li>
+                        <li><a href="./aperatifler.html"> Aperatifler </a></li>
+                        <li><a href="./tatlilar.html"> Tatlılar </a></li>
+                        <li><a href="./icecekler.html"> İçecekler </a></li>
                     </ul>
                 </li>
                 <li>
@@ -42,60 +43,68 @@
         </nav>
     </header>
 
-    
+    <div id="slider">
+        <h3>EN SON EKLENENLER</h3>
+        <img src="./assets/Resim_900_400.jpg" alt="Slider fotoları">
+    </div>
 
-    <div class="h1"></div>
-    <h1>En Popüler Tarifler</h1>
 
-    <div class="grid-container">
-        <!-- Kart 1 -->
-        <div class="card">
-            <h2>Yemek 1</h2>
-            <p>Yemek 1 tarifi buraya gelecek.</p>
+    <div class="food_title">
+        <h3>EN POPULER TARİFLER</h3>
+    </div>
+
+    <div class="card_container">
+        <div class="recipe_card">
+            <a href=""><img src="./assets/Resim_300_200.jpg" alt="Yemek Tarifinin Fotoğrafı"></a>
+            <a href="#">YEMEK TARİFİ BAŞLIĞI</a>
+            <span> 4 Kişilik, 15 dk Hazırlık, 20 dk Pişirme</span>
+            <div>
+                <span>Beğen</span>
+                <a href=""><i class="fa-solid fa-heart"></i></a>
+                <span> Yorumlar </span>
+                <a href=""><i class="fa-solid fa-comment"></i></a>
+
+            </div>
         </div>
+        <div class="recipe_card">
+            <a href=""><img src="./assets/Resim_300_200.jpg" alt="Yemek Tarifinin Fotoğrafı"></a>
+            <a href="#">YEMEK TARİFİ BAŞLIĞI</a>
+            <span> 4 Kişilik, 15 dk Hazırlık, 20 dk Pişirme</span>
+            <div>
+                <span>Beğen</span>
+                <a href=""><i class="fa-solid fa-heart"></i></a>
+                <span> Yorumlar </span>
+                <a href=""><i class="fa-solid fa-comment"></i></a>
 
-        <!-- Kart 2 -->
-        <div class="card">
-            <h2>Yemek 2</h2>
-            <p>Yemek 2 tarifi buraya gelecek.</p>
+            </div>
         </div>
+        <div class="recipe_card">
+            <a href=""><img src="./assets/Resim_300_200.jpg" alt="Yemek Tarifinin Fotoğrafı"></a>
+            <a href="#">YEMEK TARİFİ BAŞLIĞI</a>
+            <span> 4 Kişilik, 15 dk Hazırlık, 20 dk Pişirme</span>
+            <div>
+                <span>Beğen</span>
+                <a href=""><i class="fa-solid fa-heart"></i></a>
+                <span> Yorumlar </span>
+                <a href=""><i class="fa-solid fa-comment"></i></a>
 
-        <!-- Kart 3 -->
-        <div class="card">
-            <h2>Yemek 3</h2>
-            <p>Yemek 3 tarifi buraya gelecek.</p>
+            </div>
         </div>
+        <div class="recipe_card">
+            <a href=""><img src="./assets/Resim_300_200.jpg" alt="Yemek Tarifinin Fotoğrafı"></a>
+            <a href="#">YEMEK TARİFİ BAŞLIĞI</a>
+            <span> 4 Kişilik, 15 dk Hazırlık, 20 dk Pişirme</span>
+            <div>
+                <span>Beğen</span>
+                <a href=""><i class="fa-solid fa-heart"></i></a>
+                <span> Yorumlar </span>
+                <a href=""><i class="fa-solid fa-comment"></i></a>
 
-        <!-- Kart 4 -->
-        <div class="card">
-            <h2>Yemek 4</h2>
-            <p>Yemek 4 tarifi buraya gelecek.</p>
-        </div>
-
-        <!-- Kart 5 -->
-        <div class="card">
-            <h2>Yemek 5</h2>
-            <p>Yemek 5 tarifi buraya gelecek.</p>
-        </div>
-
-        <!-- Kart 6 -->
-        <div class="card">
-            <h2>Yemek 6</h2>
-            <p>Yemek 6 tarifi buraya gelecek.</p>
-        </div>
-
-        <!-- Kart 7 -->
-        <div class="card">
-            <h2>Yemek 7</h2>
-            <p>Yemek 7 tarifi buraya gelecek.</p>
-        </div>
-
-        <!-- Kart 8 -->
-        <div class="card">
-            <h2>Yemek 8</h2>
-            <p>Yemek 8 tarifi buraya gelecek.</p>
+            </div>
         </div>
     </div>
+
+
 
     <footer>
         <div class="footer-container">
@@ -113,9 +122,9 @@
                 <h4>Tarifler</h4>
                 <ul>
                     <li><a href="./anayemeksayfa.html">Ana Yemekler</a></li>
-                    <li><a href="#">Aperatifler</a></li>
-                    <li><a href="#">İçecekler</a></li>
-                    <li><a href="#">Tatlılar</a></li>
+                    <li><a href="./aperatifler.html">Aperatifler</a></li>
+                    <li><a href="./icecekler.html">İçecekler</a></li>
+                    <li><a href="./tatlilar.html">Tatlılar</a></li>
                 </ul>
             </div>
 
@@ -133,7 +142,7 @@
             <p>&copy; 2024 mutfak-sirlari.com . Tüm hakları saklıdır.</p>
         </div>
     </footer>
-    
+
     <script src="https://kit.fontawesome.com/cb74b24306.js" crossorigin="anonymous"></script>
 
 </body>

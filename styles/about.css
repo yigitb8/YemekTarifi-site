@@ -74,14 +74,25 @@ nav ul ul a:hover {
 
 section {
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    text-align: justify;
+    line-height: 2rem;
 }
 
 
+#team, #mission, #values{
+    margin: 2% 9% 3% 9%;
+    color: #555;
+}
 
+.baslik > h1 {
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 80px;
 
+}
 
 /* FOOTER  */
 .footer-container {
