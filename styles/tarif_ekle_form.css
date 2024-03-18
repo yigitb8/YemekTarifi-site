@@ -20,7 +20,7 @@
 .advertisement_container1{
     display: block;
     position: absolute;
-    margin: 0%  10%  50%  65%;
+    margin: 0%  11%  50%  65%;
     padding: 0% 5% 0% 5%;
     height: 600px;
     width: 200px;
@@ -30,7 +30,7 @@
 .advertisement_container2{
     display: block;
     position: absolute;
-    margin: 45%  10%  20%  65%;
+    margin: 45%  11%  20%  65%;
     padding: 0% 0% 0% 0%;
     width: 400px;
 }
@@ -121,10 +121,15 @@
     width: 200px;
     background-color: red;
     color: white;
-}
-
-.tarif_save > a {
     text-decoration: none;
 }
 
+.tarif_save > button > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tarif_save > button > a:active {
+    opacity: 0.5;
+}
 

@@ -27,6 +27,8 @@
     margin: 0% 2% 2% 2%;
     padding: 3px;
     padding-bottom: 5px;
+    max-width: 318px;
+    max-height: 312,7px;
     text-align: center; 
     border-radius: 10px;
     box-shadow: 1PX 1PX 10PX 1PX rgb(187, 186, 186);

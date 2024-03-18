@@ -151,7 +151,7 @@ ul > li {
 
 .tarif_save_detay{
     height: 50px;
-    width: 500px;
+    width: 540px;
     margin: 0%  0%  0%  20%;
     padding: 1%  4%  1%  5%;
     background-color: rgb(222, 216, 216);
@@ -163,7 +163,18 @@ ul > li {
     width: 200px;
     background-color: red;
     color: white;
+    text-decoration: none;
 }
+
+.tarif_save_detay > button > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tarif_save_detay > button > a:active {
+    opacity: 0.5;
+}
+
 
 footer {
     position: relative;
