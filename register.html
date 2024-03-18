@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title> Mtufak Sırları | Kayıt Ol </title>
-    <link rel="stylesheet" href="register-login.css">
+    <link rel="stylesheet" href="./styles/register-login.css">
     <link rel="stylesheet" href="./styles/homepage.css">
     <link rel="stylesheet" href="./styles/anayemeksayfa.css">
+    <link rel="stylesheet" href="./styles/detay_tarif_sayfa.css">
 
 </head>
 
@@ -44,16 +45,39 @@
         </nav>
     </header>
 
+    <main>
+        <h3>ÜYELİK FORMU</h3>
+        <form action="your_script.php" method="post"> 
+            <div>
+            <label for="username">Kullanıcı Adı:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+            <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required>
+            </div>
+            <div>
+            <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required>
+            </div>
+            <div>
+            <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+            <label for="password">Şifre:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="save_btn">
+                <button type="submit"><a href="./tarif_ekle_son.html">KAYDET</a> </button>
+                <button type="reset">TEMİZLE</button>
+            </div>
 
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+        </form>
 
-    
+
+    </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-links">
