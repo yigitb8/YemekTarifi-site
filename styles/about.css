@@ -107,7 +107,7 @@ section {
 }
 
 .footer-links h4 {
-    color: #333333;
+    color: #ffffff;
 }
 
 .footer-links ul {
@@ -120,6 +120,7 @@ section {
 }
 
 .footer-links a {
+    color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
 }

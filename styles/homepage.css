@@ -127,7 +127,7 @@ p {
 }
 
 .footer-links h4 {
-    color: #333333;
+    color: #ffffff;
 }
 
 .footer-links ul {
@@ -140,6 +140,7 @@ p {
 }
 
 .footer-links a {
+    color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -156,7 +157,7 @@ p {
 }
 
 .social-media a {
-    color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
     font-size: 24px;
     margin: 0 10px;
     text-decoration: none;
